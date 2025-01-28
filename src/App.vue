@@ -21,19 +21,16 @@ const closesidebar = () => {
 
       <ul class="header-list">
         <li class="header-item">
-          <router-link to="#" class="header-link"> New project </router-link>
-        </li>
-        <li class="header-item">
           <router-link to="#" class="header-link"> Dashboard </router-link>
         </li>
         <li class="header-item">
-          <router-link to="#" class="header-link"> More </router-link>
-        </li>
-        <li class="header-item">
-          <router-link to="#" class="header-link"> QA </router-link>
+          <router-link to="#" class="header-link"> News </router-link>
         </li>
         <li class="header-item">
           <router-link to="#" class="header-link"> Support </router-link>
+        </li>
+        <li class="header-item">
+          <router-link to="#" class="header-link"> More </router-link>
         </li>
       </ul>
       <div class="header-avatar">
