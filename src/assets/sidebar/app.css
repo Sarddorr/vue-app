@@ -1,0 +1,85 @@
+.aside {
+    height: 100vh;
+    width: 0rem;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 7rem;
+    box-shadow: 0 .5rem .3rem .3rem rgba(0, 0, 0, 0.2);
+    background: white;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.aside-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    transition: 300ms;
+    position: relative;
+}
+.aside-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: .05rem solid white;
+    margin-bottom: 3rem;
+    transition: 300ms;
+}
+
+.aside-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+}
+
+.aside-item {
+    width: 100%;
+    text-align: start;
+}
+
+.aside.opened {
+    width: 30rem;
+}
+
+.aside.opened * {
+    transition: 300ms;
+}
+
+.aside.opened .aside-list {
+    opacity: 1;
+    visibility: visible;
+}
+
+.aside.opened .aside-container {
+    padding: 2.4rem;
+}
+
+.aside.opened .aside-avatar {
+    margin-right: auto;
+}
+
+@media (max-width: 1440px) {
+    .aside.opened{
+        width: 20rem;
+    }
+}
+@media (max-width: 1024px) {
+    .aside.opened{
+        width: 0;
+    }
+}
+/* @media (max-width: 768px) {
+    .aside.opened{
+        width: 15rem;
+    }
+} */
